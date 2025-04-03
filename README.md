@@ -22,7 +22,7 @@ Docker mounts the logstash/logstash_ingest_data/json volume, allowing the logsta
 To run the app, go to port 5601 on the local machine.
 
 default dashboard have been provided in the dashboard folder.
-import it by going to management -> saved objects -> impor
+import it by going to management -> saved objects -> import -> select the provided dashboard files
 
 ## Troubleshooting
 ### Empty Fields in Kibana
@@ -30,6 +30,3 @@ Delete the sincedb.txt in logstash/logstash_ingest_data
 
 ### Authentication Error
 Change credentials in BOTH `.env` and `/pipeline/logstash.conf`. These credentials must be identical to authenticate to Elastic.
-
-## Pipeline diagram:
-![alt text](GDELT_250325.drawio.png)
